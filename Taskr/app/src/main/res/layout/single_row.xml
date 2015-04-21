@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageListItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:minHeight="48dp"
+        android:minWidth="48dp"
+        android:src="#ff9447ff"/>
+
+    <TextView
+        android:id="@+id/titleListItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imageListItem"
+        android:layout_toRightOf="@+id/imageListItem"
+        android:layout_toEndOf="@+id/imageListItem"
+        android:text="@string/taskadapter_title"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <TextView
+        android:id="@+id/descriptionListItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleListItem"
+        android:layout_toEndOf="@+id/imageListItem"
+        android:layout_toRightOf="@+id/imageListItem"
+        android:text="@string/taskadapter_description"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+</RelativeLayout>
